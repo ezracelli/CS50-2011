@@ -1,0 +1,23 @@
+i.   If strcmp, when passed two strings as arguments, returns 0, it means the two strings are equal (identical).
+
+ii.  int max = (strcmp(g.level, "debug") == 0) ? 9 : 1024;
+     aka
+     int max;
+     if (strcmp(g.level, "debug") == 0) {
+         max = 9;
+     } else {
+         max = 1024;
+     }
+
+iii. sscanf(argv[2], " %d %c", &g.number, %c) might return 2 instead of 1 if there was a char following the first
+     int parsed from the third command-line argument. (sscanf will return the number of items parsed.) There might
+     be a char in argv[2] if the user inputted a floating-point value (i.e. if argv[2] was "12.5", the char parsed
+     would be ".") or simply a nonsense string.
+
+iv.  g.y and g.x represent the location at which the user's cursor belongs.
+
+v.   show_cursor will make the cursor appear at g.y and g.x.
+
+vi.  You could add additional cases after line 188.
+
+vii. In debug #1 there is 1 blank, in debug #2 there are 2, and in debug #9 9.

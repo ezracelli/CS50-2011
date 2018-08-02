@@ -1,0 +1,34 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(lldb) copy",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "build-copy",
+            "program": "${workspaceFolder}/bmp/copy",
+            "args": ["smiley.bmp", "copy.bmp"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/bmp",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "(lldb) whodunit",
+            "type": "cppdbg",
+            "request": "launch",
+            "preLaunchTask": "build-whodunit",
+            "program": "${workspaceFolder}/bmp/whodunit",
+            "args": ["clue.bmp", "verdict.bmp"],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/bmp",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "lldb"
+        }
+    ]
+}
